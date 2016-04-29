@@ -49,13 +49,6 @@ include_once('jsloader.inc.php');
 	  Designed by Yaoh | DCJH資訊組 | <a title="首頁" class='btn'
 	href="<?php echo $_SERVER['PHP_SELF'];?>">回首頁</a>
 </span>
-	<?php
-		include("other.inc.php");
-		$msg=(isset($msg))?$msg:'';
-		if($check->isSuperAdmin())$msg.=' 管理：'.ADMIN_BTN.' 功能切換：'.other();
-
-		echo "<div id='msg'>".GUEST_LOGIN_STATUS_WITH_LOGOUT_BTN.$msg."</div>";
-		?>
 </div>
 
 <div id='container' class="row span12">
